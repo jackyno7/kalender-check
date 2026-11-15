@@ -1,6 +1,6 @@
 # Kalender-Check – wer darf in Exchange auf welchen Kalender zugreifen?
 
-Kostenloses PowerShell-Skript: liest die Berechtigungen des **Hauptkalenders aller Benutzer-, Gemeinsamen, Raum- und Gerätepostfächer** einer lokalen Exchange-Organisation aus und zeigt, **wer wo welches Recht hat**. Zusätzlich meldet es einige Auffälligkeiten (Standard-Recht zu weit, anonymer Zugriff, Schreibrechte). Ergebnis ist ein übersichtlicher **HTML-Bericht auf Deutsch**. Das Skript arbeitet **ausschließlich lesend**: Es verwendet nur Get-Befehle von Exchange, ändert nichts und überträgt keine Daten.
+Kostenloses PowerShell-Skript: liest die Berechtigungen des **Hauptkalenders aller Benutzer-, Gemeinsamen, Raum- und Gerätepostfächer** einer lokalen Exchange-Organisation aus und zeigt, **wer wo welches Recht hat**. Zusätzlich meldet es einige Auffälligkeiten (Standard-Recht zu weit, anonymer Zugriff, Schreibrechte). Ergebnis ist ein übersichtlicher **HTML-Bericht auf Deutsch oder Englisch** (`-Language de|en`, Standard je nach Windows-Sprache). Das Skript arbeitet **ausschließlich lesend**: Es verwendet nur Get-Befehle von Exchange, ändert nichts und überträgt keine Daten.
 
 ![Beispielbericht](Beispielbericht.png)
 
@@ -60,6 +60,31 @@ Kostenlos auf GitHub:
 - [Zertifikate-Bericht](https://github.com/jackyno7/zertifikate-bericht) (abgelaufene und bald ablaufende Zertifikate)
 - [Privilegierte-Konten-Check](https://github.com/jackyno7/privilegierte-konten-check) (7 Prüfpunkte zu Administratorkonten)
 
+<!-- querverweis:anfang -->
+## Alle Skripte und Vorlagen
+
+Übersicht aller Prüfskripte und Vorlagen: **[github.com/jackyno7](https://github.com/jackyno7)**
+
+Vollversionen:
+
+- Active Directory Prüfbericht: [Etsy](https://www.etsy.com/listing/4588853943) · [Gumroad](https://mueller86.gumroad.com/l/fcneoc)
+- Domänencontroller-Gesundheitsbericht: [Etsy](https://www.etsy.com/listing/4593087246) · [Gumroad](https://mueller86.gumroad.com/l/bseljr)
+- DNS- und DHCP-Bericht: [Etsy](https://www.etsy.com/listing/4593096270) · [Gumroad](https://mueller86.gumroad.com/l/sthgh)
+- Kerberos- und Altlasten-Check: [Etsy](https://www.etsy.com/listing/4593092377) · [Gumroad](https://mueller86.gumroad.com/l/zptvct)
+- Berechtigungsbericht Active Directory: [Etsy](https://www.etsy.com/listing/4593113568) · [Gumroad](https://mueller86.gumroad.com/l/xyjmdr)
+- GPO-Bericht: [Etsy](https://www.etsy.com/listing/4593129111) · [Gumroad](https://mueller86.gumroad.com/l/wdosl)
+- Anmelde- und Sperrbericht: [Etsy](https://www.etsy.com/listing/4593157082) · [Gumroad](https://mueller86.gumroad.com/l/ztktaaq)
+- Rechner-Inventar aus Active Directory: [Etsy](https://www.etsy.com/listing/4593088535) · [Gumroad](https://mueller86.gumroad.com/l/zzycdd)
+- Dateiserver-Bericht: [Etsy](https://www.etsy.com/listing/4612420692) · [Gumroad](https://mueller86.gumroad.com/l/wbbwj)
+- Windows-Rechnerbericht: [Etsy](https://www.etsy.com/listing/4616020701) · [Gumroad](https://mueller86.gumroad.com/l/wmhfk)
+- Exchange-Postfachbericht: [Etsy](https://www.etsy.com/listing/4614916333) · [Gumroad](https://mueller86.gumroad.com/l/gkdllj)
+- Exchange-Kalenderrechte-Bericht: [Etsy](https://www.etsy.com/listing/4614799790) · [Gumroad](https://mueller86.gumroad.com/l/iabfb)
+- Exchange-Nachrichtenverfolgung: [Etsy](https://www.etsy.com/listing/4614785975) · [Gumroad](https://mueller86.gumroad.com/l/msria)
+- Active Directory Prüfskript-Paket: [Etsy](https://www.etsy.com/listing/4611942401) · [Gumroad](https://mueller86.gumroad.com/l/awzjtc)
+
+Vorlagen und Checklisten (Notfallplan, Backup, Passwortrichtlinie, Onboarding, Homeoffice, Netzwerk-Dokumentation): [Etsy](https://www.etsy.com/shop/ITAdminToolsbyMM) · [Gumroad](https://mueller86.gumroad.com)
+<!-- querverweis:ende -->
+
 ## Hinweise
 
 - Der Bericht enthält Namen und Adressen von Postfächern und Berechtigten – bitte vertraulich behandeln und vor dem Einsatz klären, ob die Auswertung im eigenen Unternehmen zulässig ist.
@@ -71,4 +96,4 @@ Kostenlos auf GitHub:
 
 ### English
 
-Free, read-only PowerShell script for on-premises Exchange Server that lists who has which permission on the main calendar of every mailbox and flags a few findings (default permission too wide, anonymous access, write permissions, unresolvable entries). German HTML report with explanations and recommendations. Nothing is changed and no data leaves the machine. Run: `powershell -ExecutionPolicy Bypass -File .\Kalender-Check.ps1`. The paid report adds Deleted Items checks, group resolution, duplicate detection, group suggestions and a generated change script.
+Free, read-only PowerShell script for on-premises Exchange Server that lists who has which permission on the main calendar of every mailbox and flags a few findings (default permission too wide, anonymous access, write permissions, unresolvable entries). HTML report in German or English (`-Language de|en`) with explanations and recommendations. Nothing is changed and no data leaves the machine. Run: `powershell -ExecutionPolicy Bypass -File .\Kalender-Check.ps1`. The paid report adds Deleted Items checks, group resolution, duplicate detection, group suggestions and a generated change script.
