@@ -20,7 +20,7 @@
 
     Deutsch:
     Das Skript arbeitet ausschließlich LESEND. Es verwendet nur Get-Befehle von Exchange (Get-Mailbox,
-    Get-MailboxFolderStatistics, Get-MailboxFolderPermission), ändert keine Berechtigung und überträgt nichts.
+    Get-MailboxFolderStatistics, Get-MailboxFolderPermission), ändert keine Berechtigung und sendet nichts an Dritte oder ins Internet.
 
     Gelesen wird der Hauptkalender jedes Postfachs. Der Ordner wird über den Ordnertyp gesucht, deshalb funktioniert das
     Skript in jeder Postfachsprache; es liest nacheinander und ist bei sehr vielen Postfächern entsprechend langsam
