@@ -9,7 +9,7 @@
 
 .DESCRIPTION
     The script works exclusively READ-ONLY. It uses only Exchange Get commands (Get-Mailbox,
-    Get-MailboxFolderStatistics, Get-MailboxFolderPermission), changes no permissions and transfers nothing.
+    Get-MailboxFolderStatistics, Get-MailboxFolderPermission), changes no permissions and sends nothing to third parties or the internet.
 
     The main calendar of every mailbox is read. The folder is found by folder type, so the script works in any mailbox language; it reads sequentially and is correspondingly slow with very many mailboxes
     (roughly one second per mailbox). It is easiest to start directly on an Exchange server: The script loads the
