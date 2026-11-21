@@ -1,6 +1,6 @@
 # Kalender-Check – wer darf in Exchange auf welchen Kalender zugreifen?
 
-Kostenloses PowerShell-Skript: liest die Berechtigungen des **Hauptkalenders aller Benutzer-, Gemeinsamen, Raum- und Gerätepostfächer** einer lokalen Exchange-Organisation aus und zeigt, **wer wo welches Recht hat**. Zusätzlich meldet es einige Auffälligkeiten (Standard-Recht zu weit, anonymer Zugriff, Schreibrechte). Ergebnis ist ein übersichtlicher **HTML-Bericht auf Deutsch oder Englisch** (`-Language de|en`, Standard je nach Windows-Sprache). Das Skript arbeitet **ausschließlich lesend**: Es verwendet nur Get-Befehle von Exchange, ändert nichts und überträgt keine Daten.
+Kostenloses PowerShell-Skript: liest die Berechtigungen des **Hauptkalenders aller Benutzer-, Gemeinsamen, Raum- und Gerätepostfächer** einer lokalen Exchange-Organisation aus und zeigt, **wer wo welches Recht hat**. Zusätzlich meldet es einige Auffälligkeiten (Standard-Recht zu weit, anonymer Zugriff, Schreibrechte). Ergebnis ist ein übersichtlicher **HTML-Bericht auf Deutsch oder Englisch** (`-Language de|en`, Standard je nach Windows-Sprache). Das Skript arbeitet **ausschließlich lesend**: Es verwendet nur Get-Befehle von Exchange, ändert nichts und sendet keine Daten an Dritte oder ins Internet.
 
 ![Beispielbericht](Beispielbericht.png)
 
@@ -97,7 +97,7 @@ Vorlagen und Checklisten (Notfallplan, Backup, Passwortrichtlinie, Onboarding, H
 
 ### English
 
-Free, read-only PowerShell script for on-premises Exchange Server that lists who has which permission on the main calendar of every mailbox and flags a few findings (default permission too wide, anonymous access, write permissions, unresolvable entries). HTML report in German or English (`-Language de|en`) with explanations and recommendations. Nothing is changed and no data leaves the machine. Run: `powershell -ExecutionPolicy Bypass -File .\Kalender-Check.ps1`. The paid report adds Deleted Items checks, group resolution, duplicate detection, group suggestions and a generated change script.
+Free, read-only PowerShell script for on-premises Exchange Server that lists who has which permission on the main calendar of every mailbox and flags a few findings (default permission too wide, anonymous access, write permissions, unresolvable entries). HTML report in German or English (`-Language de|en`) with explanations and recommendations. Nothing is changed and no data is sent to third parties or the internet; the report stays local. Run: `powershell -ExecutionPolicy Bypass -File .\Kalender-Check.ps1`. The paid report adds Deleted Items checks, group resolution, duplicate detection, group suggestions and a generated change script.
 
 <!-- querverweis-en:anfang -->
 #### All scripts and templates
